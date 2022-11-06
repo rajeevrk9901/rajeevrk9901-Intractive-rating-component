@@ -3,26 +3,40 @@ import './App.css'
 import star from './assets/icon-star.svg'
 
 function App() {
-  // const [count, setCount] = useState()
+
+  const Button = ({ value }) => {
+    return <button className='btn-number' >{value}</button>
+  }
 
   return (
     // <h1>hi</h1>
     <>
       {/* Global Container */}
-      <div className="wrapper flex flex-col justify-center items-center min-h-screen">
+      <div className="wrapper flex flex-col justify-center items-center min-h-screen max-w-sm m-auto ">
         {/* Local Container */}
-        <div className="flex flex-col items-center px-4 space-y-4">
-          <img className='w-10' src={star} alt="" srcset="" />
+        <div className="flex flex-col px-6 space-y-6 rounded-xl bg-gray-200 py-6">
+          <img className='w-6' src={star} alt="" srcSet="" />
+          {/* bg-gray-400 p-6 rounded-full */}
           <h2>How did we do?</h2>
-          <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+          <p>Please let us know how we did with your <br /> support request. All feedback is appreciated <br />to help us improve our offering!</p>
           <ul className='flex space-x-4'>
-            <li><button>1</button></li>
-            <li><button>2</button></li>
-            <li><button>3</button></li>
-            <li><button>4</button></li>
-            <li><button>6</button></li>
+            <li className=''>
+              <Button value={1} />
+            </li>
+            <li>
+              <Button value={2} />
+            </li>
+            <li>
+              <Button value={3} />
+            </li>
+            <li>
+              <Button value={4} />
+            </li>
+            <li>
+              <Button value={5} />
+            </li>
           </ul>
-          <button type="submit">submit</button>
+          <button className='btn-rating uppercase text-white bg-red-800 py-2 rounded-3xl duration-150 hover:bg-red-700' type="submit">submit</button>
         </div>
       </div>
     </>
