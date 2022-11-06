@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
 import star from './assets/icon-star.svg'
+import thankyou from './assets/illustration-thank-you.svg'
 
 function App() {
 
@@ -41,6 +42,21 @@ function App() {
       </div>
     </>
   )
+}
+
+const ThankYou = () => {
+  <div className="wrapper flex flex-col justify-center items-center min-h-screen max-w-sm m-auto ">
+    {/* Local Container */}
+    <div className="flex flex-col px-6 space-y-6 rounded-xl bg-gray-200 py-6">
+      <img className='w-6' src={thankyou} alt="" srcSet="" />
+      <p>You selected Add rating here  out of 5</p>
+      <h3>
+        Thank you!
+      </h3>
+      <p> We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+  </div>
 }
 
 export default App
