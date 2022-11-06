@@ -9,7 +9,7 @@ function App() {
   const [rating, setRating] = useState("")
 
   const Button = ({ value }) => {
-    return <button className='btn-number w-10 h-10' onClick={() => { setRating(value), console.log(value) }}  >{value}</button>
+    return <button className='rounded-full btn-number w-10 h-10 bg-gray-400 text-white focus:bg-red-400 hover:bg-red-400' onClick={() => { setRating(value), console.log(value) }}  >{value}</button>
   }
 
   return (
