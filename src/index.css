@@ -23,9 +23,6 @@ body {
 
 ul li {
   background-color: gray;
-  /* padding: 0.7rem 1.1rem; */
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   color: azure;
   font-size: medium;
